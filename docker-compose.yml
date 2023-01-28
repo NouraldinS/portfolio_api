@@ -1,0 +1,10 @@
+version: '1.0'
+services:
+  api:
+    build:
+      context: ./api
+    image: docker-api-i
+    ports:
+      - "3001:3001"
+    container_name: portfolio_api
+    stdin_open: true
